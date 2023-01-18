@@ -1,8 +1,10 @@
 import React from 'react';
 import './navbar.css'
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
+    const name = useSelector(state => state.user.name)
   return (
     <div className='navbar'>
         <div className='logo'>
@@ -21,7 +23,7 @@ const Navbar = () => {
                 <img src="https://images.pexels.com/photos/3024627/pexels-photo-3024627.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" />
             </div>
             
-            <p>Dave</p>
+            <p>{name}</p>
             <ArrowDropDownOutlinedIcon />
         </div>
     </div>

@@ -1,13 +1,15 @@
 import React from "react";
 import "./rightbar.css";
 import ArrowDropDownOutlinedIcon from '@mui/icons-material/ArrowDropDownOutlined';
+import { useSelector } from "react-redux";
 
 const Rightbar = () => {
+  const name = useSelector(state => state.user.name)
   return (
     <div className="right__bar">
       <div className="rightbar__wrapper">
         <div>
-          <h2>Reccomended for John</h2>
+          <h2>Reccomended for {name}</h2>
           <div className="img_wrapper">
             <img
               src="https://images.pexels.com/photos/5797991/pexels-photo-5797991.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
