@@ -1,0 +1,52 @@
+.user {
+    flex: 2;
+    padding: 15px;
+    border-bottom: 1px solid gray;
+}
+
+.details {
+    padding: 5px 10px;
+    background: rgb(207, 172, 108);
+    border-radius: 5px;
+}
+
+.btn {
+    padding: 2px;
+    background-color: rgb(178, 81, 81);
+    color: white;
+    border-radius: 5px;
+    border: none;
+}
+
+.user-left {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-container {
+    height: 40px;
+    width: 40px;
+    
+}
+
+.image-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+input {
+    border-radius: none;
+    height: 40px;
+    width: 300px;
+}
+
+.form {
+    margin-top: 10px;
+}
+
+.input_container {
+    margin-bottom: 20px;
+}

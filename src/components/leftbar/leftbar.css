@@ -1,0 +1,14 @@
+.left__bar {
+    flex: 1;
+    border-right: 1.5px solid rgb(174, 156, 156);
+    height: 100vh;
+}
+
+.list {
+    display: flex;
+    margin: 20px;
+}
+
+.list p {
+    margin-left: 20px;
+}
